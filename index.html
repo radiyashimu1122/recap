@@ -36,8 +36,33 @@
     Array Concat And Array Form
     Array Filter
        -->
-       <input type="text" name="" id="" placeholder="Your Number" />
-    <button type="button">Sub</button>
+       <!-- <input type="text" name="" id="" placeholder="Your Number" />
+    <button type="button">Sub</button> -->
+     <!-- WINDOW OBJECT
+    The window object represents a window in browser. An object of window is created automatically by the browser.
+
+    alert()
+    displays the alert box containing message with ok button.
+
+    confirm()
+    displays the confirm dialog box containing message with ok and cancel button.
+
+    prompt()
+    displays a dialog box to get input from the user.
+
+    open()
+    opens the new window.
+
+    close()
+    closes the current window.
+
+   -->
+   <button onclick="ObjAlert()">ObjAlert</button>
+   <button onclick="ObjConfirm()">ObjConfirm</button>
+   <button onclick=" ObjPrompt() ">ObjPrompt</button>
+   <button onclick="ObjOpen()">ObjOpen</button>
+   <button onclick="ObjClose()">ObjClose</button>
+
  <script> 
       // Hello javaScript
       // document.write("Hello javaScript");
@@ -211,6 +236,21 @@ var marufaTaka = dollarToTaka(marufaDollar);
       var lubaFriends = ["Sanjida", "Sadiya", "Radiya"];
       var friendship = shimuFriends.concat(lubaFriends);
       // document.write(friendship);
+      function ObjAlert() {
+        alert("Your message");
+      }
+      function ObjConfirm() {
+        confirm("Your message");
+      }
+      function ObjPrompt() {
+        prompt("Your message");
+      }
+      function ObjOpen() {
+        open("Your message");
+      }
+      function ObjClose() {
+        close("Your message");
+      }
     </script>
   </body>
 </html> 

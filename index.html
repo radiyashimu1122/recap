@@ -31,6 +31,11 @@
     17 JavaScript Array
     18 For Loop Over Array
      -->
+      <!-- For In Loop Over Array
+    For In Loop Over Object
+    Array Concat And Array Form
+    Array Filter
+       -->
  <script> 
       // Hello javaScript
       // document.write("Hello javaScript");
@@ -45,12 +50,12 @@
       // var schoolBeton = 100;
       // var price = mobilePrice + schoolBeton;
       // document.write(price);
-      document.write(typeof mobilePrice); 
+      // document.write(typeof mobilePrice); 
     /*If Statement
    Else Statement
    Else If Statement */
 
-   var age = 18;
+   var age = 45;
  if ( age >= 18) {
 document.write("You are adult")
 }
@@ -93,7 +98,7 @@ switch (weekDay) {
 
 // For Loop 
 for ( i /= 1 ; i <= 20 ; i++) {
-   document.write(i + "<br/>")
+   // document.write(i + "<br/>")
     
 }
 var i=10
@@ -107,7 +112,7 @@ while (i <=16) {
         var c = 30;
         var d = 40;
         var e = a + b + c + d;
-        // document.write(e + "<br/>");
+        document.write(e + "<br/>");
       }
       //   addFourNum();
 
@@ -143,7 +148,7 @@ while (i <=16) {
       //   For Loop Over Array
       var argentinaTeam = ["Lionel Messi", "Emiliano Martínez ", "Alejandro Garnacho"];
       for (i = 0; i < argentinaTeam.length; i++) {
-        document.write(argentinaTeam[i] + "<br/>");
+        // document.write(argentinaTeam[i] + "<br/>");
       }
       // 5.Function
 function inchToFeet(inchs) {
@@ -185,6 +190,25 @@ var rajinaTaka =dollarToTaka(rajinaDollar);
 var marufaDollar =29;
 var marufaTaka = dollarToTaka(marufaDollar);
  // document.write(marufaTaka)
+  // For In Loop Over Array
+  var friendsName = ["A", "B", "C"];
+      for (var friendship in friendsName) {
+        //   document.write(friendsName[friendship]);
+      }
+      //   For In Loop Over Object
+      var person = {
+        name: "Messi",
+        age: 40,
+        height: "5.6 Feet",
+      };
+      for (var personInfo in person) {
+        // document.write(person[personInfo] + "<br>");
+      }
+      //   Array Concat And Array Form
+      var shimuFriends = ["Sabrina", "Nishat", "Shammi"];
+      var lubaFriends = ["Sanjida", "Sadiya", "Radiya"];
+      var friendship = shimuFriends.concat(lubaFriends);
+      document.write(friendship);
     </script>
   </body>
 </html> 
